@@ -8,7 +8,7 @@ This simulation combines real-time physics modeling with advanced reinforcement 
 
 The agent employs a Dueling Double DQN architecture with curriculum learning across seven distinct track configurations, achieving human-level performance through pure environmental interaction. Training utilizes experience replay with prioritized sampling and progressive difficulty scaling to ensure robust generalization across diverse racing scenarios.
 
-## Technical Architecture
+Technical Architecture
 
 ### Neural Network Design
 The DQN implementation features a 24-dimensional state vector comprising 15 ray-cast distance sensors and vehicle dynamics including velocity, acceleration, and angular momentum. The network architecture consists of three 256-neuron hidden layers with LayerNorm and dropout regularization, utilizing separate value and advantage heads for steering and acceleration outputs.
@@ -22,14 +22,14 @@ The environment implements realistic vehicle dynamics including friction, moment
 ## Installation and Usage
 
 ### Requirements
-```bash
+
 pip install pygame torch numpy
-```
+
 
 ### Quick Start
-```bash
+
 python main.py
-```
+
 
 The application provides four primary modes: manual play with keyboard controls, AI training visualization, trained model evaluation, and track environment preview. Manual controls use arrow keys or WASD for movement, with additional keys for reset, pause, and sensor visualization.
 
